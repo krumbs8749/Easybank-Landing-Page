@@ -1,0 +1,119 @@
+@import "../../global.scss";
+
+.Hero {  
+   background-color: $veryLightGray;
+   overflow: hidden;
+    .container{
+        @include breakpoint-up(large){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .hero-image{
+            background-image: url("../../../public/assets/bg-intro-mobile.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left center;
+            min-height: 17.5rem;
+            position: relative;
+            @include breakpoint-up(medium){
+                height: 25rem;
+            }
+            @include breakpoint-up(large){
+                flex: 3;
+                align-self: flex-end;
+                order: 2;
+                height: 41rem;
+                background-image: none;
+                
+            }
+    
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url("../../../public/assets/bg-intro-desktop.svg");
+                background-size: 120%;
+                background-repeat: no-repeat;
+                background-position: 20% 85%;
+                height: 100%;
+                width: 150%;
+                @include  breakpoint-down(medium){
+                    display: none;
+                }
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url("../../../public/assets/image-mockups.png");
+                background-size: 93%;
+                background-repeat: no-repeat;
+                background-position: center 90%;
+                height: 100%;
+                width: 100%;
+                @include breakpoint-up(medium){
+                    background-size: 80%;
+                }
+                @include breakpoint-up(large){
+                    background-size: 96%;
+                    background-repeat: no-repeat;
+                    background-position: center 101%;
+                    height: 120%;
+                    width: 118%;
+                    left: 28%;
+                }
+            }
+        }
+    
+        .hero-text {
+            text-align: center;
+            @include breakpoint-up(large){
+                flex: 2;
+                order: 1;
+                text-align: left;
+                
+            }
+    
+            h1{
+                font-weight: 300;
+                font-size: 2.1875rem;
+                line-height: 1;
+                color: $darkBlue;
+                margin: 0 0 2.25rem 0;
+    
+                @include breakpoint-up(large){
+                    font-size: 3rem;
+                }
+            }
+            p{
+                line-height: 1.5;
+                margin: 0 0 2.25rem 0;
+                @include breakpoint-up(large){
+                    font-size: 1.125rem;
+                }
+            }
+            
+            .button {
+                display: inline-block;
+                padding: 0.875rem 2.875rem;
+                border-radius: 50px;
+                background: linear-gradient(to right, $limeGreen, $brightCyan);
+                color: white;
+                font-weight: 400;
+                font-size: 0.875rem;
+                border: none;
+                cursor: pointer;
+                transition: opacity 300ms ease-in-out;
+    
+                &:hover{
+                    opacity: 0.6;
+                }
+    
+            }
+        }
+    }
+    
+    
+
+    
+}

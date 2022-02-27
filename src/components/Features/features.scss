@@ -1,0 +1,106 @@
+@import "../../global.scss";
+
+.Features {
+    background-color: $lightGrayishBlue;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+    @include breakpoint-up(medium){
+        align-items: flex-start;
+    }
+    @include breakpoint-up(large){
+        display: block;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    .intro{
+        max-width: 17.5rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        @include breakpoint-up(medium){
+            max-width: 70%;
+            text-align: left;
+        }
+        @include breakpoint-up(large){
+            text-align: left;
+            max-width: 38.45rem;
+            margin-bottom: 4.375rem;
+        }
+        h1{
+            font-weight: 400;
+            font-size: 1.6875rem;
+            color: $darkBlue;
+            @include breakpoint-up(large) {
+                font-size: 2.1875rem;
+            }
+        }
+        p{
+            font-size: 1rem;
+            
+        }
+    }
+
+    .feature-grid{
+        @include breakpoint-up(medium){
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @include breakpoint-up(large){
+            display: flex;
+        }
+        .feature-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 18.75rem;
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+            @include breakpoint-up(medium){
+                flex: 0 0 50%;
+                width: 16.5625rem;
+                padding-right: 1.625rem;
+                align-items: flex-start;
+            }
+            @include breakpoint-up(large){
+                display: block;
+                flex: 1; 
+                width: 16.5625rem;
+                padding-right: 1.625rem;
+            }
+            .feature-icon{
+                height: 4.125rem;
+                margin-bottom: 1.5em;
+                @include breakpoint-up(large){
+                    height: 4.5625rem;
+                    margin-bottom: 2.625rem;
+                }
+            }
+            .feature-title{
+                font-weight: 300;
+                font-size: 1.125rem;
+                color: $darkBlue;
+                margin-bottom: 1rem;
+                @include breakpoint-up(large){
+                    font-size: 1.375rem;
+                }
+                
+            }
+            .feature-desc {
+                font-size: 0.75rem;
+                margin: 0;
+                text-align: center;
+                @include breakpoint-up(medium){
+                    text-align: left;
+                }
+                @include breakpoint-up(large){
+                    font-size: 1rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
