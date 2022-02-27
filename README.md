@@ -35,15 +35,12 @@ These components are then imported to the App.jsx (main component) and finally r
 
 ### Screenshot
 
-**Desktop View**
-[](./public/assets/Desktop_View.png)
-**Tablet View**
-[](./public/assets/Tablet_View.png)
-**Mobile View**
-[](./public/assets/Mobile_View_1.png) [](./public/assets/Mobile_View_2.png)
-[](./public/assets/Mobile_View_3.png)
-**Mobile View with Menu Opened**
-[](./public/assets/Mobile_View_Menu_Open.png)
+- [Desktop View](./public/assets/Desktop_View.png)
+- [Tablet View](./public/assets/Tablet_View.png)
+- [Mobile View_1](./public/assets/Mobile_View_1.png) 
+- [Mobile View_2](./public/assets/Mobile_View_2.png)
+- [Mobile View_3](./public/assets/Mobile_View_3.png)
+- [Mobile View with Menu Opened](./public/assets/Mobile_View_Menu_Open.png)
 
 
 ## My process
