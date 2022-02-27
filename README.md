@@ -53,7 +53,6 @@ These components are then imported to the App.jsx (main component) and finally r
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
 
 
 ### What I learned
