@@ -11,7 +11,6 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -62,9 +61,7 @@ These components are then imported to the App.jsx (main component) and finally r
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+These are some of the codes that I have made throughout the process of completing this project.
 
 
 ```scss
@@ -137,13 +134,9 @@ const proudOfThisFunc = () => {
 ```
 
 
-### Continued development
-
-
-
-
 ### Useful resources
 
+- [Figma](https://www.figma.com/) - I used this website to translate the design's requirement to the actual programm (eg. height, padding, margin)
 - [Codepen](https://codepen.io/) - This helped me for searchin a way to produce a specific design by looking at other people's previous work. I really liked using this website and will use it going forward.
 - [CSS Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/) - This is an amazing article which helped me multiple times in trying to figure out the CSS Grid various functionality.
 
